@@ -1,0 +1,14 @@
+{
+  "name": "election-project",
+  "scripts": {
+    "contract:compile": "hardhat compile",
+    "contract:deploy:Election": "hardhat run scripts/deploy:Election.ts --network sandbox2p5",
+    "contract:deploy:Election:ganache": "hardhat run scripts/deploy:Election.ts --network ganache",
+    "contract:deploy:Election:goerli": "hardhat run scripts/deploy:Election.ts --network goerli"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "dotenv": "^16.0.3",
+    "hardhat": "^2.12.5"
+  }
+}
