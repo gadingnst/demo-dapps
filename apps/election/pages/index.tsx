@@ -222,6 +222,9 @@ function Dashboard() {
 
   return (
     <div className="px-3 my-3">
+      <div className="bg-yellow-300 px-2 py-1 rounded-lg text-xs text-center">
+        <p>You must enable Pop-up window in your browser.</p>
+      </div>
       <div className="flex flex-col items-center justify-around">
         <Button
           className={`my-2 ${isWalletConnected ? 'cursor-not-allowed' : 'cursor-pointer'}`}
@@ -231,14 +234,6 @@ function Dashboard() {
         >
           {isWalletConnected ? 'Wallet Connected' : 'Connect Wallet'}
         </Button>
-        {/* <Button
-          className={`my-2 ${!isWalletConnected ? 'cursor-not-allowed' : 'cursor-pointer'}`}
-          colorScheme="gray"
-          disabled={!isWalletConnected}
-          onClick={signMessage}
-        >
-          Simulate Sign Message
-        </Button> */}
       </div>
 
       {/* Form Candidate */}
@@ -297,5 +292,5 @@ function Dashboard() {
 }
 
 export default withMobileLayoutPage(Dashboard, {
-  title: '(SDK Demo) Election Vote System'
+  title: '(2p5 Web3 SDK Demo) Election System'
 });
