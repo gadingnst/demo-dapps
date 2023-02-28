@@ -9,8 +9,8 @@ async function main() {
 
     const Election = await ethers.getContractFactory('Election');
     const election = await Election.deploy();
-
     await election.deployed();
+
     console.log(`Election contract address: ${election.address}`);
   } catch (err) {
     console.error(err);

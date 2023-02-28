@@ -71,7 +71,7 @@ function isTransactionError(err: unknown): err is TransactionError {
 }
 
 function initiateWeb3() {
-  const tpf: any = new TPFWeb('test', 'sandbox2p5', {
+  const tpf: any = new TPFWeb('test', 'goerli', {
     environment: 'staging'
   });
   const web3 = new Web3(tpf.provider);

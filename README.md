@@ -26,8 +26,8 @@ This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It inclu
 
 ### Apps and Packages
 #### Apps
-- `example-election`: another [Next.js](https://nextjs.org/) app for experimenting `web3-sdk` package.
-- `example-smartcontract`: a [Hardhat](https://hardhat.org) project for contract development in `example-election` project.
+- `election`: another [Next.js](https://nextjs.org/) app for experimenting `web3-sdk` package.
+- `smart-contracts`: a [Hardhat](https://hardhat.org) project for contract development in `example-election` project.
 
 #### Packages
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)

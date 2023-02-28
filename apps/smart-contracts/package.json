@@ -1,5 +1,5 @@
 {
-  "name": "election-project",
+  "name": "smart-contract-example",
   "scripts": {
     "contract:compile": "hardhat compile",
     "contract:deploy:Election": "hardhat run scripts/deploy:Election.ts --network sandbox2p5",
