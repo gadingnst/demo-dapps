@@ -72,7 +72,7 @@ function isTransactionError(err: unknown): err is TransactionError {
 
 function initiateWeb3() {
   const tpf: any = new TPFWeb('test', 'goerli', {
-    environment: 'staging'
+    environment: 'production'
   });
   const web3 = new Web3(tpf.provider);
   web3.eth.handleRevert = true;

@@ -19,7 +19,9 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
-  "dependencies": {},
+  "dependencies": {
+    "@two-point-five/web3-sdk": "^0.3.3-preview"
+  },
   "devDependencies": {
     "eslint-config-custom": "*",
     "prettier": "latest",
